@@ -237,14 +237,15 @@ document.getElementById("next").addEventListener("click", () => {
     masterPlay.classList.remove("fa-circle-play");
     masterPlay.classList.add("fa-circle-pause");
     masterSongName.innerText = songs[SongIndex].SongName;
-    playingImg.style.opacity = 0.8;git
-    songs.forEach((e, i) => {
+    playingImg.style.opacity = 0.8;
+    songs.forEach((i) => {
       if (songs[SongIndex].FilePath == `songs/${SongIndex}.mp3`) {
         let song = document.getElementsByClassName("songItemplay")[SongIndex];
         song.classList.remove("fa-circle-play");
         song.classList.add("fa-circle-pause");
       }
-    });  }
+    });
+  }
 });
 
 
