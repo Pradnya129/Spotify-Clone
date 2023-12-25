@@ -8,7 +8,7 @@ let masterSongName = document.getElementById("masterSongName");
 
 let songs = [
   {
-    SongName: "Mere+Banke+Bihari+Laal+Tum+Itna+Na+Kario",
+    SongName: "Mere+Banke+Bihari+Laal+Tum",
     FilePath: "songs/0.mp3",
     CoverPath: "covers/1.jpg",
   },
@@ -121,10 +121,12 @@ AudioElement.addEventListener("timeupdate", () => {
   const formattedTime = `${minutes}:${seconds < 10 ? "0" : ""}${seconds}`;
   startDuration.innerText = formattedTime;
 });
+
 myprogressbar.addEventListener("change", () => {
   AudioElement.currentTime =
     (myprogressbar.value * AudioElement.duration) / 100;
 });
+
 let makeAllPlays = () => {
   Array.from(document.getElementsByClassName("songItemplay")).forEach((e) => {
     console.log("paused all");
@@ -162,7 +164,21 @@ Array.from(document.getElementsByClassName("songItemplay")).forEach(
 
 document.getElementById("previouse").addEventListener("click", () => {
   if (SongIndex <= 0) {
-    SongIndex = 10;
+    SongIndex = 9;
+    makeAllPlays();
+    AudioElement.src = `songs/${SongIndex}.mp3`;
+    AudioElement.currentTime = 0;
+    AudioElement.play();
+    masterPlay.classList.remove("fa-circle-play");
+    masterPlay.classList.add("fa-circle-pause");
+    masterSongName.innerText = songs[SongIndex].SongName;
+    songs.forEach((i) => {
+      if (songs[SongIndex].FilePath == `songs/${SongIndex}.mp3`) {
+        let song = document.getElementsByClassName("songItemplay")[SongIndex];
+        song.classList.remove("fa-circle-play");
+        song.classList.add("fa-circle-pause");
+      }
+    });
   } else {
     makeAllPlays();
     SongIndex = SongIndex - 1;
@@ -172,8 +188,8 @@ document.getElementById("previouse").addEventListener("click", () => {
     masterPlay.classList.remove("fa-circle-play");
     masterPlay.classList.add("fa-circle-pause");
     masterSongName.innerText = songs[SongIndex].SongName;
-    songs.forEach((e, i) => {
-      if (songs[i].FilePath == `songs/${SongIndex}.mp3`) {
+    songs.forEach((i) => {
+      if (songs[SongIndex].FilePath == `songs/${SongIndex}.mp3`) {
         let song = document.getElementsByClassName("songItemplay")[SongIndex];
         song.classList.remove("fa-circle-play");
         song.classList.add("fa-circle-pause");
@@ -184,7 +200,22 @@ document.getElementById("previouse").addEventListener("click", () => {
 
 document.getElementById("next").addEventListener("click", () => {
   if (SongIndex >= 9) {
-    SongIndex = -1;
+    SongIndex = 0;
+
+    makeAllPlays();
+    AudioElement.src = `songs/${SongIndex}.mp3`;
+    AudioElement.currentTime = 0;
+    AudioElement.play();
+    masterPlay.classList.remove("fa-circle-play");
+    masterPlay.classList.add("fa-circle-pause");
+    masterSongName.innerText = songs[SongIndex].SongName;
+    songs.forEach((i) => {
+      if (songs[SongIndex].FilePath == `songs/${SongIndex}.mp3`) {
+        let song = document.getElementsByClassName("songItemplay")[SongIndex];
+        song.classList.remove("fa-circle-play");
+        song.classList.add("fa-circle-pause");
+      }
+    });
   } else {
     makeAllPlays();
     SongIndex = SongIndex + 1;
@@ -195,8 +226,8 @@ document.getElementById("next").addEventListener("click", () => {
     masterPlay.classList.add("fa-circle-pause");
     masterSongName.innerText = songs[SongIndex].SongName;
     songs.forEach((e, i) => {
-      if (songs[i].FilePath == `songs/${SongIndex}.mp3`) {
-        let song = document.getElementsByClassName("songItemplay")[i];
+      if (songs[SongIndex].FilePath == `songs/${SongIndex}.mp3`) {
+        let song = document.getElementsByClassName("songItemplay")[SongIndex];
         song.classList.remove("fa-circle-play");
         song.classList.add("fa-circle-pause");
       }
