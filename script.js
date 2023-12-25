@@ -156,10 +156,12 @@ Array.from(document.getElementsByClassName("songItemplay")).forEach(
         masterPlay.classList.remove("fa-circle-play");
         masterPlay.classList.add("fa-circle-pause");
         masterSongName.innerText = songs[SongIndex].SongName;
+        playingImg.style.opacity = 0.8;
       } else {
         AudioElement.pause();
         masterPlay.classList.remove("fa-circle-pause");
         masterPlay.classList.add("fa-circle-play");
+        playingImg.style.opacity = 0;
       }
     });
   }
@@ -176,6 +178,7 @@ document.getElementById("previouse").addEventListener("click", () => {
     masterPlay.classList.remove("fa-circle-play");
     masterPlay.classList.add("fa-circle-pause");
     masterSongName.innerText = songs[SongIndex].SongName;
+    playingImg.style.opacity = 0.8;
     songs.forEach((i) => {
       if (songs[SongIndex].FilePath == `songs/${SongIndex}.mp3`) {
         let song = document.getElementsByClassName("songItemplay")[SongIndex];
@@ -192,6 +195,7 @@ document.getElementById("previouse").addEventListener("click", () => {
     masterPlay.classList.remove("fa-circle-play");
     masterPlay.classList.add("fa-circle-pause");
     masterSongName.innerText = songs[SongIndex].SongName;
+    playingImg.style.opacity = 0.8;
     songs.forEach((i) => {
       if (songs[SongIndex].FilePath == `songs/${SongIndex}.mp3`) {
         let song = document.getElementsByClassName("songItemplay")[SongIndex];
@@ -214,6 +218,7 @@ document.getElementById("next").addEventListener("click", () => {
     masterPlay.classList.remove("fa-circle-play");
     masterPlay.classList.add("fa-circle-pause");
     masterSongName.innerText = songs[SongIndex].SongName;
+    playingImg.style.opacity = 0.8;
     songs.forEach((i) => {
       if (songs[SongIndex].FilePath == `songs/${SongIndex}.mp3`) {
         let song = document.getElementsByClassName("songItemplay")[SongIndex];
@@ -232,6 +237,7 @@ document.getElementById("next").addEventListener("click", () => {
     masterPlay.classList.remove("fa-circle-play");
     masterPlay.classList.add("fa-circle-pause");
     masterSongName.innerText = songs[SongIndex].SongName;
+    playingImg.style.opacity = 0.8;git
     songs.forEach((e, i) => {
       if (songs[SongIndex].FilePath == `songs/${SongIndex}.mp3`) {
         let song = document.getElementsByClassName("songItemplay")[SongIndex];
