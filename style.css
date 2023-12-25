@@ -147,14 +147,11 @@ nav ul li {
 .bottomIcons input {
   accent-color: #009dff;
 }
-.songBanner {
-  width: 20px;
-  position: relative;
-}
+
 #playingImg {
-  position: absolute;
-  right: 0;
-  bottom: -15px;
+   width: 30px;
+   height: 30px;
+   margin-top: -20px;
   opacity: 0;
   transition: opacity 0.4s ease-in;
 }
@@ -211,10 +208,7 @@ nav ul li {
     margin-top: 2%;
   }
 
-  #playingImg {
-    display: none;
-    width: 10px;
-  }
+ 
 }
 @media (min-width: 586px) {
   .container {
@@ -241,10 +235,7 @@ nav ul li {
     text-align: center;
     color: white;
   }
-  #playingImg {
-    /* display: none; */
-    width: 10px;
-  }
+
 }
 
 @media (max-width: 390px) {
@@ -342,8 +333,5 @@ nav ul li {
     width: 100vw;
   }
 
-  #playingImg {
-    display: none;
-    width: 10px;
-  }
+ 
 }
