@@ -11,6 +11,7 @@ FontAwesome: Icons for play, pause, forward, and backward buttons.<b>
 Google Fonts: Utilized the Poppins and Varela Round fonts for a visually appealing text.<b>
 
 ##Features
+
 Navigation Bar:
 
 Displayed at the top of the page with the Spotify logo and "Home" navigation item.
