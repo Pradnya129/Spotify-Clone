@@ -4,11 +4,11 @@ This project is a simple web-based Spotify clone that allows users to play a cur
 
 ##Technologies Used
 
-HTML5: Used for structuring the web page.
-CSS3: Styling the user interface with responsiveness in mind.
-JavaScript: Implemented the interactive features and functionality.
-FontAwesome: Icons for play, pause, forward, and backward buttons.
-Google Fonts: Utilized the Poppins and Varela Round fonts for a visually appealing text.
+HTML5: Used for structuring the web page.<b>
+CSS3: Styling the user interface with responsiveness in mind.<b>
+JavaScript: Implemented the interactive features and functionality.<b>
+FontAwesome: Icons for play, pause, forward, and backward buttons.<b>
+Google Fonts: Utilized the Poppins and Varela Round fonts for a visually appealing text.<b>
 
 ##Features
 Navigation Bar:
