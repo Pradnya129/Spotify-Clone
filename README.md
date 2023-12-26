@@ -1,7 +1,9 @@
 ##Spotify Clone Project
+
 This project is a simple web-based Spotify clone that allows users to play a curated list of devotional songs. It includes features such as play/pause functionality, previous and next track navigation, volume control, and a progress bar to track the current position in a song.
 
 ##Technologies Used
+
 HTML5: Used for structuring the web page.
 CSS3: Styling the user interface with responsiveness in mind.
 JavaScript: Implemented the interactive features and functionality.
