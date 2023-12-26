@@ -10,52 +10,52 @@ let songs = [
   {
     SongName: "Mere+Banke+Bihari+Laal+Tum",
     FilePath: "songs/0.mp3",
-    CoverPath: "covers/1.jpg",
+    CoverPath: "covers/1.jpeg",
   },
   {
     SongName: "Prem Ho Tum Preet Ho Female Version",
     FilePath: "songs/1.mp3",
-    CoverPath: "covers/2.jpg",
+    CoverPath: "covers/2.jpeg",
   },
   {
     SongName: "Achyutam Keshavam Song Devi Chitralekhaji",
     FilePath: "songs/2.mp3",
-    CoverPath: "covers/3.jpg",
+    CoverPath: "covers/3.jpeg",
   },
   {
     SongName: "Om Jai Jagdish Hare",
     FilePath: "songs/3.mp3",
-    CoverPath: "covers/4.jpg",
+    CoverPath: "covers/4.jpeg",
   },
   {
     SongName: "RADHA RANI | NANDLAL CHHANGA",
     FilePath: "songs/4.mp3",
-    CoverPath: "covers/5.jpg",
+    CoverPath: "covers/5.jpeg",
   },
   {
     SongName: "Tere Dar Pe Aake Sanware",
     FilePath: "songs/5.mp3",
-    CoverPath: "covers/6.jpg",
+    CoverPath: "covers/6.jpeg",
   },
   {
     SongName: "Achyutam-Keshavam",
     FilePath: "songs/6.mp3",
-    CoverPath: "covers/7.jpg",
+    CoverPath: "covers/7.jpeg",
   },
   {
     SongName: "kanhaiya kanhaiya pukara karege",
     FilePath: "songs/7.mp3",
-    CoverPath: "covers/8.jpg",
+    CoverPath: "covers/8.jpeg",
   },
   {
     SongName: "Govind bolo Hari gopal bolo",
     FilePath: "songs/8.mp3",
-    CoverPath: "covers/9.jpg",
+    CoverPath: "covers/9.jpeg",
   },
   {
     SongName: "Bol Bol ke thak gaiye tum",
     FilePath: "songs/9.mp3",
-    CoverPath: "covers/10.jpg",
+    CoverPath: "covers/10.jpeg",
   },
 ];
 
