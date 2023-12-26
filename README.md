@@ -5,9 +5,13 @@ This project is a simple web-based Spotify clone that allows users to play a cur
 ##Technologies Used
 
 HTML5: Used for structuring the web page.<b>
+
 CSS3: Styling the user interface with responsiveness in mind.<b>
+
 JavaScript: Implemented the interactive features and functionality.<b>
+
 FontAwesome: Icons for play, pause, forward, and backward buttons.<b>
+
 Google Fonts: Utilized the Poppins and Varela Round fonts for a visually appealing text.<b>
 
 ##Features
@@ -39,5 +43,8 @@ The JavaScript code handles the play/pause functionality, song navigation, and v
 Ensure an active internet connection for FontAwesome and Google Fonts.
 
 ##Screnshots
+
+![image](https://github.com/Pradnya129/Spotify-Clone/assets/129608807/4b2c3aef-bf92-45ec-8430-9e4444d84d11)
+
 
 ![image](https://github.com/Pradnya129/Spotify-Clone/assets/129608807/6d3f3fa4-9c91-419e-9e19-2b0ac48a21b6)
